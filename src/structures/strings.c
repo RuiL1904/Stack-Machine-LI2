@@ -1,5 +1,5 @@
-#include "stack.h"
-#include "operations.h"
+#include "../stack.h"
+#include "../operators/operations.h"
 #include "strings.h"
 
 #include <stdio.h>

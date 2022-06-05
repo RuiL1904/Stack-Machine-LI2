@@ -1,3 +1,6 @@
+#ifndef ARRAYS_H
+#define ARRAYS_H
+
 /**
  * @brief Função que concatena dois arrays 
  * 
@@ -89,3 +92,5 @@ void create_array_in_range(STACK_ELEM x, STACK_ELEM *result);
  * @param result STACK_ELEM onde irá ser guardado o resultado
  */
 void check_array_equality(STACK *s, STACK_ELEM x, STACK_ELEM y, STACK_ELEM *result);
+
+#endif

@@ -1,13 +1,13 @@
-#include "stack.h"
+#include "../stack.h"
 
 #include "operations.h"
 #include "mathematics.h"
 #include "conversions.h"
-#include "strings.h"
-#include "arrays.h"
-#include "blocks.h"
+#include "../structures/strings.h"
+#include "../structures/arrays.h"
+#include "../structures/blocks.h"
 
-#include "parser.h"
+#include "../parser.h"
 
 #include <stdio.h>
 #include <stdlib.h>

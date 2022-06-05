@@ -1,4 +1,4 @@
-#include "stack.h"
+#include "../stack.h"
 #include "operations.h"
 #include "conversions.h"
 

@@ -1,7 +1,7 @@
-#include "stack.h"
-#include "parser.h"
-#include "conversions.h"
-#include "operations.h"
+#include "../stack.h"
+#include "../parser.h"
+#include "../operators/conversions.h"
+#include "../operators/operations.h"
 #include "blocks.h"
 
 #include <assert.h>
