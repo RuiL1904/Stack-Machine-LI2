@@ -1,5 +1,5 @@
-code/main
-code/*.o 
+src/main
+src/**/*.o 
 .vscode
 test
 doc
