@@ -3,15 +3,15 @@ CFLAGS = -Wall -Wextra -pedantic-errors -O2
 LIBS = -lm
 OBJS = src/main.o src/stack.o src/parser.o src/operators/operations.o src/operators/mathematics.o src/operators/conversions.o src/structures/strings.o src/structures/arrays.o src/structures/blocks.o 
 TARGET = main
-DOC_FILE = cfg/doxygen.config
-COVERAGE_FILE = cfg/doxygen-coverage.info
+DOC_FILE = config/doxygen.config
+COVERAGE_FILE = config/doxygen-coverage.info
 
 define test_script = 
 	pmccabe src/**/*.c | awk -v OFS='\t' 'BEGIN {printf "%s\t%s\t%s\n", "CC", "NOI", "FUNCTION"} {print $1, $3, $6 $7}' | sort -n
 endef
 
 define coverage_script =
-	python3 -m coverxygen --xml-dir doc/xml --src-dir src/ --format summary --output cfg/doxygen-coverage.info
+	python3 -m coverxygen --xml-dir doc/xml --src-dir src/ --format summary --output config/doxygen-coverage.info
 endef
 
 $(TARGET): $(OBJS)
@@ -36,4 +36,4 @@ coverage: doc
 	$(value coverage_script); clear; cat $(COVERAGE_FILE); rm $(COVERAGE_FILE)
 
 log: 
-	chmod +x cfg/repl; ./cfg/repl
+	chmod +x config/repl; ./config/repl
